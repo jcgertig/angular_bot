@@ -1,0 +1,10 @@
+<div ng-init="initApp()" ></div>
+<div class="jumbotron">
+  <h1>Say hello to angular bot!</h1>
+</div>
+
+<div id="chat">
+  <div class="chat" ng-repeat="chatMsg in chatMsgs">
+    <span class="name">{{chatMsg.name}}:</span> <span class="msg" ng-bind-html="chatMsg.msg"></span>
+  </div>
+</div>
